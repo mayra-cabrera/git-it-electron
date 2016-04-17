@@ -28,7 +28,7 @@
   var selector = document.getElementById('lang-select')
   // TODO put lang somewhere else that we can get without needing template in JS
   // Can also remove default '-' with lang
-  var currentLang = "".replace(/-/, '')
+  var currentLang = "sp".replace(/-/, '')
   selector.value = currentLang
   selector.addEventListener('change', function () {
     var currentChallenge = document.querySelector('.challenge-item.current')
