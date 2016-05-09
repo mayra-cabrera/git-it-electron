@@ -114,108 +114,108 @@
 </div>
       <div class="content">
         <div id="challenge-desc" class="chal-goal blue-border border-box">
-  <p>Add a branch to your forked repository to work on your changes.</p>
+  <p>Agregue una rama a su copia de repositorio para trabajar en sus cambios.</p>
 </div>
 
 <div class="chal-background light-blue solid-box">
   <h2>Branches</h2>
-  <p>Git repositories use branches to isolate work when needed. It's common practice when working on a project or with others on a project to create a <strong>branch</strong> to keep your working changes in. This way you can do your work while the main, commonly named 'master', branch stays stable. When the work on your branch is finished you merge it back into the 'master' master branch.</p>
+  <p>Los repositorios Git utilizan ramificaciones para aislar el trabajo cuando lo necesita. Es una práctica común cuando se trabaja en un proyecto o con otras personas para crear una <strong>branch</strong> para mantener los cambios de su trabajo. De esta manera, usted puede hacer su trabajo mientras que la principal llamada comúnmente rama “maestra” queda estable. Cuando el trabajo en su rama está terminado, se fusionan de nuevo en la rama “maestra” principal.</p>
 
-  <p>The diagram below shows how you can branch off of your 'master' branch, do work and the merge those changes back into 'master'. You can even branch off of a branch if you need to, the 'master' branch doesn't have to be the base.</p>
+  <p>El diagrama de abajo le muestra como ramificar de su rama “maestra”, hacer el trabajo y la combinación cambia de nuevo a “maestro”. Usted puede ramificar de una rama si lo necesita, la rama “maestra” no necesita ser la base.</p>
 
   <img src="../assets/imgs/branches.png" width="100%">
 
   <p>For a great visualization on how branches work in a project, see this GitHub Guide: <a href="http://guides.github.com/overviews/flow/" target="_blank">guides.github.com/overviews/flow</a></p>
 
   <h2>GitHub Pages</h2>
-  <p>GitHub will automatically serve and host static website files in branches named 'gh-pages'. This free service i called <a href="http://pages.github.com">GitHub Pages</a>. Since the project you forked creates a website, its main branch is named 'gh-pages' instead of 'master'. All repositories that have a 'gh-pages' branch with website files can be found, in their hosted version, using this pattern for the URL:</p>
+  <p>GitHub automáticamente alojará archivos de páginas web estáticas en ramificaciones llamadas ‘gh-pages’. Este servicio gratuito lo llamé  <a href="http://pages.github.com">GitHub Pages</a>. Dado que el proyecto se crea en una página web que usted copió y editó, está rama es llamada “gh-pages” en vez de “maestra”. Todos los repositorios que tengan una rama ‘gh-pages’ con archivos en página web pueden ser encontrados, en su versión alojada, usando esté diseño de URL:</p>
 
   <code>http://githubusername.github.io/repositoryname</code>
 </div>
 
 <div class="chal-step blue-border border-box">
-  <h3>Create a branch</h3>
-  <p>When you create a branch, Git copies everything from the current branch you're on and places it in the branch you've requested be made.</p>
+  <h3>Crea una branch</h3>
+  <p>Cuando creas una rama, Git copia todo lo que está en la rama actual y lo coloca en la rama que se ha solicitado hacerlo.</p>
 
-  <p>While still inside of your local 'patchwork' repository, type <code>git status</code> to see what branch you're currently on. Git should reply that you're on the 'gh-pages' branch.</p>
+  <p>Mientras todavía está en el interior de tu repositorio local ‘patchwork’, escribe <code>git status</code>para ver cuál es tu rama actual. Git responderá que estás en la rama ‘gh-pages’.</p>
 
-  <p>Now create a new branch and name it "add-&#60;username&#62;", where 'username' is
-  your username. For instance, "add-jlord". <strong>Branches are case-sensitive so name your branch exactly the way your GitHub name appears</strong>.</p>
+  <p>Ahora crear una nueva rama y nombrarla "add-&#60;username&#62;", donde 'username' es
+  tu nombre de usuario. Por ejemplo, "add-jlord". <strong>Las ramas son sensibles a las mayúsculas y minúsculas, nombra tu rama exactamente en el modo que aparece tu nombre de GitHub.</strong>.</p>
 
   <p><code class="shell">git branch &#60;BRANCHNAME&#62;</code></p>
 
-  <p>Now you have a branch with a new name that is identical to 'gh-pages'.</p>
+  <p>Ahora tienes una rama con un nuevo nombre que es idéntica a ‘gh-pages’.</p>
 
-  <p>To go into that branch and work on it, similar to using <code>cd</code> to
-  change directory in terminal, you <strong>checkout</strong> a branch. To go on your new branch:</p>
+  <p>Para ir a esa rama y trabajar con ella, similar a usar un <code>cd</code> para cambiar el directorio de la terminal, tú
+   <strong>checkout</strong> una branch. Para ir a tu branch nueva:</p>
 
   <p><code class="shell">git checkout &#60;BRANCHNAME&#62;</code></p>
 </div>
 
 <div class="chal-step blue-border border-box">
-  <h3>Step: Create a new file</h3>
-  <p>Back in your text editor:</p>
+  <h3>Step: Crea un nuevo archivo</h3>
+  <p>Regresando a tu editor de texto:</p>
   <ul>
-    <li>Create a new file named <span style="white-space: nowrap;">"add-&#60;USERNAME&#62;.txt"</span>, where 'username' is your username. For instance, "add-jlord.txt".</li>
-    <li>Then, just write your GitHub username in it, that's it and that's all. For instance, I'd type 'jlord'.</li>
-    <li>Save this file in the 'contributors' folder in Patchwork <strong>Patchwork/contributors/add-yourusername.txt</strong></li>
-    <li>Next, check in your changes (see below).</li>
+    <li>Crea un nuevo archivo llamado<span style="white-space: nowrap;">"add-&#60;USERNAME&#62;.txt"</span>, donde 'username' es tu nombre de usuario. Por ejemplo, "add-jlord.txt".</li>
+    <li>Después, escribe tu nombre de usuario de GitHub en él, es eso y es todo. Por ejemplo, yo escribiría: 'jlord'.</li>
+    <li>Guarda este archivo en el folder de 'contributors' en Patchwork <strong>Patchwork/contributors/add-yourusername.txt</strong></li>
+    <li>Después, revisa en tus cambios (Ver abajo).</li>
   </ul>
 </div>
 
 <div class="chal-step blue-border border-box">
   <h3>Check-in</h3>
-  <p>Go through the steps for checking in a project: </p>
+  <p>Sigue los pasos para registrar un proyecto: </p>
 
   <p><code class="shell">git status</code></p>
   <p><code class="shell">git add &#60;FILENAME&#62;</code></p>
   <p><code class="shell">git commit -m "commit message"</code></p>
 
-  <p>Now push your update to your fork on GitHub:</p>
+  <p>Ahora push tu actualización a tu fork en GitHub:</p>
   <p><code class="shell">git push origin &#60;BRANCHNAME&#62;</code></p>
 
-  <p>Make sure that you're pushing to 'origin', which is your fork's address on GitHub. If you get an error check to make sure you have your remotes set up correctly with 'origin' pointing to your fork and 'upstream' pointing to the original repository: <code>git remote -v</code>
+  <p>Asegurate de que estás pushing al ‘origen’ el cual es la dirección de tu fork en GitHub. Si obtienes una comprobación de error, asegúrate de que tienes tus controles instalados correctamente con el punto ‘origen’ de tu fork y tu punto “upstream” en el repositorio original: <code>git remote -v</code>
 </div>
 
 <div class="verify bold-blue solid-box">
-  <button class="btn-white" id='verify-challenge'>VERIFY</button>
-  <button class="btn-white" id='select-directory'>SELECT DIRECTORY</button>
+  <button class="btn-white" id='verify-challenge'>VERIFICAR</button>
+  <button class="btn-white" id='select-directory'>DIRECTORIO DE SELECCIÓN</button>
   <div id="verify-spinner" class="sk-double-bounce">
     <div class="sk-child sk-double-bounce1"></div>
     <div class="sk-child sk-double-bounce2"></div>
   </div>
-  <span id='path-required-warning'>Please select your repository directory.</span>
+  <span id='path-required-warning'>Favor de seleccionar tu directorio de repositorio.</span>
   <span id='directory-path'></span>
   <ul id="verify-list">
   </ul>
-  <button class="btn-white" id="clear-completed-challenge">Clear completed status</button>
+  <button class="btn-white" id="clear-completed-challenge">Borrar el status.</button>
 </div>
 
 <div class="chal-no-pass grey-border border-box">
-  <h4>File NOT in contributors folder</h4>
-  <p>The file you create should inside the existing 'contributors' folder in the Patchwork repository. If you put it somewhere else, simply use Finder or Windows Explorer to move your file into the folder. You can check <code>git status</code> again and you'll find it sees your changes. Stage and then commit "all" (-A) of these changes (additions and deletions) with the commands below.</p>
+  <h4>El archivo no va en la carpeta de contribuidores</h4>
+  <p>El archive que creaste deberia estar dentro de la carpeta de ‘contribuidores’ en el repositorio Patchwork. Si lo pones en otro lugar, simplemente usa Finder o Windows Explorer para mover tu archivo a la carpeta. Puedes revisar <code>git status</code> otra vez y podrás encontrar lo que se ve en tus cambios. La etapa y luego comete "todo" (-A) de estos cambios (adiciones y supresiones) con las órdenes debajo.</p>
   <p><code class="shell">git add -A</code></p>
   <p><code class="shell">git commit -m "move file into contributors folder"</code></p>
 
-  <h4>Branch name expected: _____</h4>
-  <p>The branch name should match your user name exactly. To change your branch name:</p>
+  <h4>Nombre esperado de la rama: _____</h4>
+  <p>El nombre de la rama deberá coincidir exactamente con tu nombre de usuario. Para cambiar el nombre de tu rama:</p>
   <p><code class="shell">git branch -m &#60;NEWBRANCHNAME&#62;</code></p>
-  <p>When you've made your updates, verify again!</p>
+  <p>Cuando hagas tus actualizaciones, ¡Verifica de nuevo!</p>
 </div>
 
 <div class="chal-tip grey-border border-box">
   <ul class="no-list-style">
-    <li><strong>You can create and switch to a branch in one line</strong></li>
+    <li><strong>Puedes crear y cambiar a una rama en una línea</strong></li>
     <li><code class="shell">git checkout -b &#60;BRANCHNAME&#62;</code></li>
-    <li><strong>Create a new branch</strong></li>
+    <li><strong>Crear una nueva branch</strong></li>
     <li><code class="shell">git branch &#60;BRANCHNAME&#62;</code></li>
-    <li><strong>Move onto a branch</strong></li>
+    <li><strong>Mover a una branch</strong></li>
     <li><code class="shell">git checkout &#60;BRANCHNAME&#62;</code></li>
-    <li><strong>List the branches</strong></li>
+    <li><strong>Enlistar las branches</strong></li>
     <li><code class="shell">git branch</code></li>
-    <li><strong>Rename a branch you're currently on</strong></li>
+    <li><strong>Renombrar una branch en la que estás actualmente</strong></li>
     <li><code class="shell">git branch -m &#60;NEWBRANCHNAME&#62;</code></li>
-    <li><strong>Verify what branch you're working on</strong></li>
+    <li><strong>Verificar en cual branch estás trabajando</strong></li>
     <li><code class="shell">git status</code></li>
   </ul>
 </div>
