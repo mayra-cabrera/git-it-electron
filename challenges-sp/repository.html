@@ -114,71 +114,71 @@
 </div>
       <div class="content">
         <div id="challenge-desc" class="chal-goal blue-border border-box">
-  <p>Create a new repository on your computer.</p>
+  <p>Crea un nuevo repositorio en tu computadora.</p>
 </div>
 
 <div class="chal-background light-blue solid-box">
-  <h2> Repositories</h2>
-  <p>A <strong>repository</strong> is a collection of related items. In our case, when writing software, it is a collection of files related to a software project. You can imagine it as a project folder with all the relevant files inside of it. In
-  fact, that's what it will look like on your computer anyways. Sometimes they're called "repos" for short.</p>
+  <h2> Repositorios</h2>
+  <p>Un <strong>repositorio</strong> es una colección de artículos relacionados. En nuestro casi, con la escritura de software, esta es una colección de archivos dedicados a un proyecto de software. Puedes imaginarlo como un folder de proyecto con todos los archivos relevantes dentro.
+  De hecho, así es como se verá en tu computadora. Muchas veces se le llama “repos” como abreviación. </p>
 
   <img src="../assets/imgs/repos.png" width="600">
 
-  <p>You tell Git what your project is and Git will start tracking all
-  of the changes to that folder. This makes it a Git repository—a folder of items being tracked by Git. Git tracks when files are added, subtracted or even a single letter in a single file is changed. All of this plus who did it and when is tracked by Git. In software that's called <strong>version control</strong>.</p>
+  <p>Tú le dices a Git que es tú proyecto y Git empezará a rastrear todos
+    los cambios a ese folder. Esto lo hace un repositorio Git---- un folder de ítems siendo rastreados por Git. Git rastrea cuando los archivos son agregados, sustraídos o hasta cuando una sola letra del archivo ha sido cambiada. Todo esto además de lo que se hizo y cuando se hace un seguimiento por Git. En software esto es llamado <strong>control de versiones.</strong>.</p>
 
-  <h2>Using Terminal</h2>
-  <p><strong>Terminal</strong> (or Bash) is a way to instruct your computer to do things by typing commands rather than clicking applications with your mouse. You can rename files, open files, create new folders, move between directories (folders) and more all by running typed commands. You can even run a text editor (such as <a href="http://en.wikipedia.org/wiki/Vim_(text_editor)" target="_blank"> Vim</a>) in your terminal and never have to leave!</p>
+  <h2>Usando la Terminal</h2>
+  <p><strong>La terminal</strong> (o Bash) es una manera de dar instrucciones a tu computadora para hacer cosas escribiendo comandos preferibles que dar click a aplicaciones con tu mouse. Puedes renombrar archivos, crear folders nuevos, mover entre directorios (folders) y más, todo por ejecutar comandos escritos. Hasta puedes ejecutar un editor de textos (como <a href="http://en.wikipedia.org/wiki/Vim_(text_editor)" target="_blank"> Vim</a>) en tu terminal ¡Y no tener que irte jamás!</p>
 
-  <p>Besides navigating your computer, you can also use programs in Terminal that have a <strong>command-line interface (CLI)</strong>, meaning they can be run with commands in terminal. Git is one of these. You can access and control Git through commands in terminal, as you'll be doing very soon!</p>
+  <p>Además de navegar en tu computadora, también puedes usar programas en la terminal que tienen una <strong>Interface de Comando de Línea(CLI)</strong>, que significa que ellos fuejer ejecutarse con comandos en la terminal. Git es uno de estos. Puedes acceder y controlar Git a través de comandos en la terminar, ¡Cómo lo estarás haciendo muy pronto!</p>
 
-  <p>In Git-it you'll learn a few basic command line actions (in addition to Git commands) which will be described within the steps.</p>
+  <p>En Git-it aprenderás algo sobre acciones básicas de línea de comandos (además de los comandos de Git) los cuales se te describiran conforme sigamos los pasos</p>
 </div>
 
 <div class="chal-step blue-border border-box">
-  <h3>Create a Repository</h3>
-  <p>You're going to create a new project folder and then initialize it as a Git
-  repository. To make things easy, name your folder what you'd name the project, like 'hello-world'.</p>
+  <h3>Crea un Repositorio</h3>
+  <p>Vas a crear un nuevo folder de un nuevo proyecto y después inicialo como un repositorio de Git.
+  Para hacer las cosas fácil, nombra tu folder con el nombre de tu proyecto, como “hello-world”</p>
 
-  <p>Open your terminal! In your terminal window, type these commands, one at a time, pressing press enter/return after each.</p>
+  <p>¡Abre tu terminal! En la ventana de tu terminal, escribe estos comandos, uno a la vez apretando enter/return después de cada uno.</p>
 
-  <p>First, make a new folder:<br><span class="inline-tip">Tip: mkdir stands for <em>make directory</em></span></p>
+  <p>Primero, haz una nueva carpeta:<br><span class="inline-tip">Tip: mkdir stands for <em>make directory</em></span></p>
   <code class="shell">mkdir hello-world</code>
 
-  <p>Then go into that folder:<br><span class="inline-tip">Tip: cd stands for <em>change directory</em></span></p>
+  <p>Después ve a esa carpeta:<br><span class="inline-tip">Tip: cd stands for <em>change directory</em></span></p>
   <code class="shell">cd hello-world</code>
 
-  <p>Finally, tell Git to initialize (start tracking) this folder:</p>
+  <p>Finalmente, dile a Git que inicie (empiece a espiar) esté folder:</p>
   <code class="shell">git init</code>
 
-  <p>The last command should return something starting with "Initialized empty Git repository". The others commands do not return anything.</p>
+  <p>El último comando deberá regresar algo empezando con “inicialización vacía de repositorio de Git”. Los otros comandos no regresan nada.</p>
 
-  <p>You did it! If you want to be double-sure that it's a Git repository, type <code>git status</code> and if it doesn't return 'fatal: Not a git repository...', you're golden!</p>
+  <p>¡Lo hiciste! Si quieres estar más seguro que es un repositorio Git, escribe <code>git status</code> y si no regresa ‘fatal: no es un repositorio Git’ ¡Eres oro!</p>
 </div>
 
 <div class="verify bold-blue solid-box">
-  <button class="btn-white" id='verify-challenge'>VERIFY</button>
-  <button class="btn-white" id='select-directory'>SELECT DIRECTORY</button>
+  <button class="btn-white" id='verify-challenge'>VERIFICAR</button>
+  <button class="btn-white" id='select-directory'>DIRECTORIO DE SELECCIÓN</button>
   <div id="verify-spinner" class="sk-double-bounce">
     <div class="sk-child sk-double-bounce1"></div>
     <div class="sk-child sk-double-bounce2"></div>
   </div>
-  <span id='path-required-warning'>Please select your repository directory.</span>
+  <span id='path-required-warning'>Favor de seleccionar tu directorio de repositorio.</span>
   <span id='directory-path'></span>
   <ul id="verify-list">
   </ul>
-  <button class="btn-white" id="clear-completed-challenge">Clear completed status</button>
+  <button class="btn-white" id="clear-completed-challenge">Borrar el estado</button>
 </div>
 
 <div class="chal-tip grey-border border-box">
   <ul class="no-list-style">
-    <li><strong>Make a new folder (aka make directory)</strong></li>
+    <li><strong>Haz una nueva carpeta (aka haz un directorio)</strong></li>
     <code class="shell">mkdir &#60;FOLDERNAME&#62;</code>
-    <li><strong>Navigate into an existing folder (aka change directory)</strong></li>
+    <li><strong>Navega en una carpeta existente (aka cambia de directorio)</strong></li>
     <code class="shell">cd &#60;FOLDERNAME&#62;</code>
-    <li><strong>List the items in a folder</strong></li>
+    <li><strong>Enlista los archivos de la carpeta</strong></li>
     <code class="shell">ls </code>
-    <li><strong>Turn Git on for a folder</strong></li>
+    <li><strong>Activa a Git para una carpeta</strong></li>
     <code class="shell">git init</code>
   </ul>
 </div>
