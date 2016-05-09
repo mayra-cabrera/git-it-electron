@@ -114,73 +114,72 @@
 </div>
       <div class="content">
         <div id="challenge-desc" class="chal-goal blue-border border-box">
-  <p>Merge your branch locally, delete the branch and pull from upstream.</p>
+  <p>Fusiona tu rama localmente, elimina la rama y atraela hacia upstream</p>
  </div>
 
  <div class="chal-background light-blue solid-box">
-   <h2>Cleaning up</h2>
+   <h2>Limpieza</h2>
 
-   <p>Once you don't need branches anymore you can delete them locally and remotely. This is helpful so that you don't end up with a pile of old branches.</p>
+   <p>Una vez que no necesites las ramas nunca más puedes eliminarlas local y remotamente. Esto es útil para que no termine una pila de ramas viejas.</p>
 </div>
 
 <div class="chal-step blue-border border-box">
-  <h3>Merge Locally</h3>
-  <p>Your pull request has been merged! Your branch was merged into the 'gh-pages' branch of the original on GitHub. You can merge your branch locally, too.</p>
+  <h3>Fusiona localmente</h3>
+  <p>¡Tú solicitud de atraer fue fusionada! Tu rama fue fusionada en la rama original de GitHub de “gh-pages”. Puedes fusionar tu rama localmente, también.</p>
 
-  <p>First, move into the branch you want to merge into—in this case, the branch 'gh-pages'.</p>
+  <p>Primero, muévete en la rama que quieres fusionar---- en este caso, la rama ‘gh-pages’</p>
   <p><code class="shell">git checkout gh-pages</code></p>
 
-  <p>Now tell Git what branch you want to merge in— in this case,
-    your feature branch that begins with "add-".</p>
+  <p>Ahora dile a Git que rama vas a fusionar---- en este caso, tu rama característica que empieza con “add-“</p>
   <p><code class="shell">git merge &#60;BRANCHNAME&#62;</code></p>
 
-  <p>Tidy up by deleting your feature branch. Now that it has been merged you don't really need it around.</p>
+  <p>Poner en orden mediante la supresión de la rama característica. Ahora esta fue fusionada, en realidad no la necesitas alrededor. </p>
   <p><code class="shell">git branch -d &#60;BRANCHNAME&#62;</code></p>
 
-  <p>You can also delete the branch from your fork on GitHub:</p>
+  <p>También puedes eliminar la rama de tu fork en Github:</p>
   <p><code class="shell">git push &#60;REMOTENAME&#62; --delete &#60;BRANCHNAME&#62;</code></p>
 </div>
 
 <div class="chal-step blue-border border-box">
-  <h3>Pull from Upstream</h3>
-  <p>And last but not least, the original has changed since your pull request was merged—Reporobot added your name to the website! If you pull in these changes from upstream you'll be up to date and have that version too. You can actually see it live as well at: yourusername.github.io/patchwork.</p>
+  <h3>Atraela a Upstream</h3>
+  <p>Y lo último pero no menos importante, el original cambió desde que tu solicitud de atraer fue fusionada--- ¡Reporobot agregó tu nombre a la página web! Si tú empujas en estos cambios para el upstream, podrás estar al día y tener esa versión también.</p>
 
-  <p>To pull from the original upstream:</p>
+  <p>Para atraer desde el upstream original:</p>
   <p><code class="shell">git pull upstream gh-pages</code></p>
 </div>
 
 <div class="chal-background light-blue solid-box">
-  <h2>Congratulations!</h2>
-  <p>You've created local repositories, remote repositories, worked with a collaborator, pushed, pulled and joined the millions of others developing and enriching open source!</p>
+  <h2>¡Felicidades!</h2>
+  <p>Haz creado repositorios locales, repositorios remotos, trabajaste con un colaborados, empujaste, atraiste y te uniste a millones de otros en desarrollo y enriquecimiento en código abierto!</p>
 
-  <p>Visit <a href="https://jlord.github.io/patchwork" target="_blank">jlord.github.io/patchwork</a> to see your name incorporated! Looking to keep going? Checkout the <a href="../pages/resources.html#what-next">What Next</a> section on the resources page in this app.</p>
+  <p>Visita <a href="https://jlord.github.io/patchwork" target="_blank">jlord.github.io/patchwork</a> para ver tu nombre incorporado! ¿Buscas seguir? Checa la sección <a href="../pages/resources.html#what-next">What Next</a> en los recursos de la página en esta aplicación.</p>
 </div>
 
 <div class="verify bold-blue solid-box">
-  <button class="btn-white" id='verify-challenge'>VERIFY</button>
-  <button class="btn-white" id='select-directory'>SELECT DIRECTORY</button>
+  <button class="btn-white" id='verify-challenge'>VERICAR</button>
+  <button class="btn-white" id='select-directory'>DIRECTORIO DE SELECCIÓN</button>
   <div id="verify-spinner" class="sk-double-bounce">
     <div class="sk-child sk-double-bounce1"></div>
     <div class="sk-child sk-double-bounce2"></div>
   </div>
-  <span id='path-required-warning'>Please select your repository directory.</span>
+  <span id='path-required-warning'>Favor de seleccionar tu directorio de reposición.</span>
   <span id='directory-path'></span>
   <ul id="verify-list">
   </ul>
-  <button class="btn-white" id="clear-completed-challenge">Clear completed status</button>
+  <button class="btn-white" id="clear-completed-challenge">Borrar el estado</button>
 </div>
 
 <div class="chal-tip grey-border border-box">
   <ul class="no-list-style">
-    <li><strong>Merge a branch into current branch</strong></li>
+    <li><strong>Fusiona una rama a una rama corriente</strong></li>
     <code class="shell">git merge &#60;BRANCHNAME&#62;</code>
-    <li><strong>Change the branch you're working on</strong></li>
+    <li><strong>Cambia la rama en la que estás trabajando</strong></li>
     <code class="shell">git checkout &#60;BRANCHNAME&#62;</code>
-    <li><strong>Delete a local branch</strong></li>
+    <li><strong>Elimina una rama local</strong></li>
     <code class="shell">git branch -d &#60;BRANCHNAME&#62;</code>
-    <li><strong>Delete a remote branch</strong></li>
+    <li><strong>Elimina una rama remota</strong></li>
     <code class="shell">git push &#60;REMOTENAME&#62; --delete &#60;BRANCHNAME&#62;</code>
-    <li><strong>Pull from a remote branch</strong></li>
+    <li><strong>Atrae una rama remota</strong></li>
     <code class="shell">git pull &#60;REMOTENAME&#62; &#60;BRANCHNAME&#62;</code>
   </ul>
 </div>
