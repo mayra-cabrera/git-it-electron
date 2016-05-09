@@ -114,58 +114,58 @@
 </div>
       <div class="content">
         <div id="challenge-desc" class="chal-goal blue-border border-box">
-  <p>Create a file in your new repository, add something to that file and commit those changes with Git.</p>
+  <p>Crea un nuevo archivo en tu nuevo repositorio, agrega algo a ese archivo y confirmar esos cambios con Git.</p>
 </div>
 
 <div class="chal-background light-blue solid-box">
   <h2>Commits</h2>
-  <p>Commits are core to using Git. They are the moments in which you save and describe the work you've done. They are the ticks in the timeline of your project's history.</p>
+  <p>Commits son fundamentales para el uso de Git. Esos son los momentos en los cuales tu guardas y describes el trabajo que tu estuviste haciendo. Son los instantes en la línea del tiempo de la historia de tu proyecto.</p>
 </div>
 
 <div class="chal-step blue-border border-box">
-  <h3>Create a New File</h3>
-  <p>Now that you've got a repository started let's add a file to it.</p>
-  <p>Open your text editor and create a new empty file. Now write a little bit of text, perhaps type "Hello!", and save the file as 'readme.txt' in the 'hello-world' folder you created in the last challenge.</p>
+  <h3>Crear un nuevo archivo</h3>
+  <p>Ahora que tienes un repositorio empezado vamos a agregar un archivo en él.</p>
+  <p>Abre tu editor de texto y crea un nuevo archivo vacío. Ahora escribe un poco de texto, quizá escribe “¡Hello!”, y guarda el archivo como “readme.txt” en la carpeta “hello-word” que creaste en el desafío anterior.</p>
 </div>
 
 <div class="chal-step blue-border border-box">
   <h3>Status, Add and Commit Changes</h3>
-  <p>Next check the <strong>status</strong> of your repository to find out if there have been changes. You know you have changed something, but does Git?</p>
+  <p>Después revisa el <strong>status</strong> de tu repositorio para encontrar si ha habido cambios. Tu sabes si has cambiado algo, pero ¿Git lo sabe?</p>
 
-  <p>Make sure you're still within your <code>hello-world</code> directory when you're running these commands. Use Git to see what changed in your repository:</p>
+  <p>Asegurate de seguir en tu directorio <code>hello-world</code> cuando estés ejecutando estos comandos. Usa Git para ver qué cambio en tu repositorio:</p>
 
-  <p>First, check the status:</p>
+  <p>Primero, revisa el status:</p>
   <p><code class="shell">git status</code></p>
-  <p>Git should tell you that a file has been added.</p>
+  <p>Git te dirá que archivo se ha agregado.</p>
 
-  <p>Then <strong>add</strong> the file you just created so that it becomes a part of the changes you will <strong>commit</strong> (aka save) with Git:</p>
+  <p>Después <strong>agrega</strong> el archivo que acabas de crear eso se convertirá en una parte de los cambios que vas a  <strong>commit</strong> (aka guardar) con Git:</p>
   <p><code class="shell">git add readme.txt</code></p>
 
-  <p>Finally, <strong>commit</strong> those changes to the repository's history with a
-    short (m) message describing the updates.</p>
+  <p>Finalmente, <strong>commit</strong>  esos cambios en el historial del repositorio con un
+     pequeño mensaje que describa las actualizaciones.</p>
   <p><code class="shell">git commit -m "Created readme"</code></p>
 </div>
 
 <div class="chal-step blue-border border-box">
-  <h3>Step: Make More Changes</h3>
-  <p>Now add another line to 'readme.txt' and save the file again.</p>
+  <h3>Step: Haz Más Cambios</h3>
+  <p>Ahora agrega otra línea a ‘readme.txt’ y guarda el archivo de nuevo.</p>
 
-  <p>In terminal, you can view the <strong>diff</strong>erence between the file now and how it was at your last commit. </p>
+  <p>En la terminal, tu puedes ver la <strong>diff</strong>erencia entre el archivo ahora y como era en tu ultima confirmación. </p>
 
-  <p>Tell Git to show you the <strong>diff</strong>:</p>
+  <p>Dile a Git que te muestre la <strong>diff</strong>:</p>
   <p><code class="shell">git diff</code></p>
 
-  <p>Now with what you just learned above, commit this latest change.</p>
+  <p>Ahora con lo que acabas de aprender arriba, confirma estos últimos cambios.</p>
 </div>
 
 <div class="verify bold-blue solid-box">
-  <button class="btn-white" id='verify-challenge'>VERIFY</button>
-  <button class="btn-white" id='select-directory'>SELECT DIRECTORY</button>
+  <button class="btn-white" id='verify-challenge'>VERIFICAR</button>
+  <button class="btn-white" id='select-directory'>DIRECTORIO DE SELECCIÓN</button>
   <div id="verify-spinner" class="sk-double-bounce">
     <div class="sk-child sk-double-bounce1"></div>
     <div class="sk-child sk-double-bounce2"></div>
   </div>
-  <span id='path-required-warning'>Please select your repository directory.</span>
+  <span id='path-required-warning'>Favor de seleccionar tu directorio de repositorio</span>
   <span id='directory-path'></span>
   <ul id="verify-list">
   </ul>
@@ -174,15 +174,15 @@
 
 <div class="chal-tip grey-border border-box">
   <ul class="no-list-style">
-    <li><strong>Check status of changes to a repository</strong></li>
+    <li><strong>Revisar el estado de cambio de un repositorio</strong></li>
     <li><code class="shell">git status</code></li>
-    <li><strong>View changes to files</strong></li>
+    <li><strong>Ver cambios de los archivos</strong></li>
     <li><code class="shell">git diff</code></li>
-    <li><strong>Add a file's changes to be committed</strong></li>
+    <li><strong>Agregar los cambios de un archivo para ser confirmado</strong></li>
     <li><code class="shell">git add &#60;FILENAME&#62;</code></li>
-    <li><strong>To add all files changes</strong></li>
+    <li><strong>Agregar todos los cambios de un archivo</strong></li>
     <li><code class="shell">git add .</code></li>
-    <li><strong>To commit (aka save) the changes you've added with a short message describing the changes</strong></li>
+    <li><strong>Para confirmar (aka guardar) los cambios que agregaste con un mensaje corto describiendo los cambios.</strong></li>
     <li><code class="shell">git commit -m "your commit message"</code></li>
   <ul>
 </div>
