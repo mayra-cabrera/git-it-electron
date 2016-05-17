@@ -30,3 +30,5 @@ node_modules
 Git-it-win32*/
 Git-it-darwin*/
 Git-it-linux*/
+
+*.swp
